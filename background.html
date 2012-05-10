@@ -1,0 +1,43 @@
+<html>
+<head>
+<script>
+chrome.extension.onRequest.addListener(
+  function(request, sender, sendResponse) {
+    if (!sender.tab)
+      return(false);
+    
+    if (request.c3_action == "onload")
+    {
+      chrome.pageAction.show(sender.tab.id);
+      camelizer.onLoad(null);
+      sendResponse({}); // snub them.
+    }
+    else
+    {
+      alert("SNUB");
+      sendResponse({}); // snub them.
+    }
+  });
+
+function pageload(tabId, changeInfo, tab)
+{
+  chrome.pageAction.hide(tabId);
+  
+  chrome.tabs.getSelected(null, function(tab) {
+  chrome.tabs.sendRequest(tab.id, {c3_action: "onload"}, function(resp) {
+    if (resp.c3_data == "OK")
+    {
+      chrome.pageAction.show(tabId);
+    }
+  });
+});
+  
+}
+
+chrome.tabs.onUpdated.addListener(pageload);
+chrome.tabs.onSelectionChanged.addListener(pageload);
+console.log("HERE");
+//camelizer.onLoad();
+</script>
+</head>
+</html>

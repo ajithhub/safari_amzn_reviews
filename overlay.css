@@ -1,0 +1,80 @@
+#camelizerContentBox
+{
+  height: 400px;
+  width: 600px;
+  padding: 10px;
+  min-height:300px;
+  background-color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#ffffff));
+  overflow: hidden;
+  text-align: left;
+  margin: 0;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 0.8em;
+}
+
+#camelizerChart 
+{
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  padding: 5px;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 2px #F0F0F0;
+}
+
+#camelizerDisplayChart
+{
+  width: 100%;
+}
+
+#camelizerStatusBar {
+    cursor: pointer;
+}
+
+#camelizerStatusText {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+#camelizerLoadingThrob
+{
+}
+
+#camelizerUrlParent
+{
+  margin-top: 3px;
+  font-size: 0.9em;
+}
+
+#camelizerUrlParent a:link,
+#camelizerUrlParent a:visited
+{
+  color: #003399;
+}
+
+#camelizerUrlParent a:hover
+{
+  color: #cc6600;
+}
+
+#camelizerFeedbackUrl,
+#camelizerUrl,
+#camelizerDot
+{
+  margin-right: 5px;
+}
+
+#camelizerAbout
+{
+  font-size: 0.8em;
+  color: #999999;
+  float: right;
+  margin-top: 3px;
+}
+
+#camelizerDot
+{
+  font-weight: bold;
+}

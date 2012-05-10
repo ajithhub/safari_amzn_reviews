@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="overlay.css" />
+  <script src="misc.js"></script>
+  <script src="camelhump.js"></script>
+  <script src="overlay.js"></script>
+</head>
+<body id="camelizerContentBox" onload="camelizer.onLoad(this);">
+  <div id="camelizerDisplayNotSupported" style="display: none;">
+    <div id="camelizerNotSupportedText">This site or page is not supported by The Camelizer.</div>
+  </div>
+  <div id="camelizerDisplayError" style="display: none;">
+    <div id="camelizerErrorText">An error has occurred.</div>
+  </div>
+  <div id="camelizerDisplayProductNotFound" style="display: none;">
+    <div id="camelizerProductNotFoundText">Product not found.  We will attempt to find it and add it to our database, so please check again later.</div>
+  </div>
+  <div id="camelizerDisplayLoading" style="display: none;">
+    <span id="camelizerLoadingText">Loading...</span>
+    <img id="camelizerLoadingThrob" src="loading.gif" />
+  </div>
+  <div id="camelizerDisplayChart" style="visibility: hidden;">
+    <img id="camelizerChart" />
+    <div id="camelizerUrlParent">
+      <span id="camelizerAbout">Thank you for using The Camelizer by Cosmic Shovel, Inc.</span>
+      <a href="#" onclick="camelizer.openProductPage(); return(false);" title="View detailed price history information and sign up to receive email/Twitter/RSS alerts when prices drop" id="camelizerUrl" target="_blank">View product details</a>
+      <span id="camelizerDot">-</span>
+      <a href="http://camelcamelcamel.com/contact" id="camelizerFeedbackUrl" title="Report bugs and/or suggest new features" target="_blank" onclick="camelizer.openContactPage(); return(false);">Leave feedback</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "js": [ "onload.js" ],
+      "matches": ["http://*.safaribooksonline.com/*"],
+      "run_at": "document_end"
+   } ],
+   "description": "Safari to amazon",
+   "icons": {
+      "16": "amazon_16.png",
+      "48": "amazon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxbvT0nBVaPPMAAwC4CYp+GA3hllMfMdJMtShuCrO5mTe89bwBQHBvV9fs+J80v/IhVNqtCxiaeI/fLkWJ9txKIY8fqhtSyUZR851Pb4otbuNNl7ZU+6JefY1yk7Feade1OTMad6e2WrytKsRjA8zVX7oXvDcQPwdSe8nC5kJCowIDAQAB",
+   "name": "The Camelizer",
+   "page_action": {
+      "default_icon": "amazon_48.png",
+      "default_popup": "feed.html",
+      "default_title": "Amazon review for Safari"
+   },
+   "permissions": [ "tabs", "http://*/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.5"
+}
