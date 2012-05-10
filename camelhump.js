@@ -53,7 +53,7 @@ var camelHump = function(url, document)
       this.runSafari();
     else
       return(null);
-    camel_url = "http://localhost:8081/?ean=" + this.asin
+    camel_url = "http://amazonbooklookup.appspot.com/?ean=" + this.asin
     return(camel_url);
   };
   
