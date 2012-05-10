@@ -10,8 +10,7 @@
       "16": "amazon_16.png",
       "48": "amazon_48.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxbvT0nBVaPPMAAwC4CYp+GA3hllMfMdJMtShuCrO5mTe89bwBQHBvV9fs+J80v/IhVNqtCxiaeI/fLkWJ9txKIY8fqhtSyUZR851Pb4otbuNNl7ZU+6JefY1yk7Feade1OTMad6e2WrytKsRjA8zVX7oXvDcQPwdSe8nC5kJCowIDAQAB",
-   "name": "The Camelizer",
+   "name": "Amazon Reviews for Safari Books Online",
    "page_action": {
       "default_icon": "amazon_48.png",
       "default_popup": "feed.html",
