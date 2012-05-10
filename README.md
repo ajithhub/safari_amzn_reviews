@@ -11,3 +11,7 @@ https://github.com/ajithhub/safari_amzn_reviews/blob/master/dist/safari_extensio
 [1]: http://my.safaribooksonline.com/
 [2]: http://camelcamelcamel.com/camelizer
 
+
+It looks like this:
+
+![Screenshot](http://dl.dropbox.com/u/157588/image_hosting/github/Chrome_safari_extension.png)
