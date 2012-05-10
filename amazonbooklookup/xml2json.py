@@ -34,7 +34,8 @@ R. White, 2006 November 6
 """
 
 import xml.etree.cElementTree as ET
-import simplejson, optparse, sys, os
+import json as simplejson
+import optparse, sys, os
 
 def elem_to_internal(elem,strip=1):
 
